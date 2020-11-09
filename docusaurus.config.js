@@ -1,9 +1,9 @@
 module.exports = {
   title           :'Swatch',
   tagline         :'A powerful, lightweight (S)CSS coloring and theming library based on CSS4 vars and the Setter/Getter pattern.',
-  url             :'https://vercel.com/fwrlines/swatch-docs',
+  url             :'https://swatch.dev',
   baseUrl         :'/',
-  favicon         :'img/favicon.ico',
+  favicon         :'img/favicon.png',
   organizationName:'fwrlines', // Usually your GitHub org/user name.
   projectName     :'Swatch', // Usually your repo name.
   themes          :['@docusaurus/theme-live-codeblock'],
@@ -12,7 +12,7 @@ module.exports = {
       title:'Swatch',
       logo :{
         alt:'My Site Logo',
-        src:'img/logo.png',
+        src:'img/favicon.png',
       },
       items:[
         {
@@ -24,12 +24,12 @@ module.exports = {
         {
           href    :'https://github.com/fwrlines/swatch',
           label   :'GitHub',
-          position:'right',
+          position:'left',
         },
       ],
     },
     footer:{
-      style:'dark',
+      style:'light',
       links:[
         {
           title:'Docs',
@@ -71,7 +71,7 @@ module.exports = {
           ],
         },
       ],
-      copyright:`Copyright © ${new Date().getFullYear()} By Adrian V and Ali Mg.`,
+      copyright:`Copyright © ${new Date().getFullYear()} By Adrian V and Ali Mg. This site is made using the quite helpful Docusaurus.`,
     },
   },
   presets:[

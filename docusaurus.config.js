@@ -1,6 +1,6 @@
 module.exports = {
   title           :'Swatch',
-  tagline         :'A powerful, lightweight (S)CSS coloring and theming library based on CSS4 vars and the Setter/Getter pattern.',
+  tagline         :'A powerful, lightweight (S)CSS coloring and theming library based on CSS vars and the Setter/Getter pattern.',
   url             :'https://swatch.dev',
   baseUrl         :'/',
   favicon         :'img/favicon.png',
@@ -8,6 +8,11 @@ module.exports = {
   projectName     :'Swatch', // Usually your repo name.
   themes          :['@docusaurus/theme-live-codeblock'],
   themeConfig     :{
+    googleAnalytics:{
+      trackingID :'UA-182693414-1',
+      // Optional fields.
+      anonymizeIP:true, // Should IPs be anonymized?
+    },
     navbar:{
       title:'Swatch',
       logo :{
@@ -71,7 +76,7 @@ module.exports = {
           ],
         },
       ],
-      copyright:`Copyright © ${new Date().getFullYear()} By Adrian V and Ali Mg. This site is made using the quite helpful Docusaurus.`,
+      copyright:`Copyright © ${new Date().getFullYear()} By Adrian V and Ali Mg. This site is made using Docusaurus.`,
     },
   },
   presets:[
@@ -90,7 +95,7 @@ module.exports = {
         },
         theme:{
           customCss:[
-            require.resolve('@fwrlines/swatch/main.min.css'),
+            require.resolve('@fwrlines/swatch/dist/main.min.css'),
             require.resolve('./src/css/custom.css')
           ] 
         },
